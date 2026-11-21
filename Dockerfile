@@ -26,7 +26,7 @@ RUN git clone -b ${SRTLA_BRANCH} https://github.com/OpenIRL/srtla.git srtla \
 # SLS Stage
 # Redeclare build argument for this stage
 ARG SLS_TAG
-FROM ghcr.io/openirl/srt-live-server:${SLS_TAG} AS sls-stage
+FROM ghcr.io/lee89tw14/srt-live-server:${SLS_TAG} AS sls-stage
 
 # Final Stage
 FROM alpine:3.20

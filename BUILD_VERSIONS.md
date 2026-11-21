@@ -6,7 +6,7 @@ This repository implements a flexible build system that allows switching between
 
 The Dockerfile supports the following build arguments:
 
-- `SRTLA_BRANCH`: SRTla branch (default: `main`, options: `main`, `next`)
+- `SRTLA_BRANCH`: SRTla branch (default: `main`; any branch of `lee89tw14/srtla`)
 - `SLS_TAG`: srt-live-server tag (default: `latest`, options: `latest`, `next`)
 
 ## Version Selection
@@ -22,7 +22,7 @@ The `release.yml` workflow selects versions based on the release type and option
 You can override the default behavior using keywords in the release description:
 
 **SRTla Override:**
-- `srtla:next` - Uses next branch (only allowed in pre-releases)
+- `srtla:next` - Uses next branch (only allowed in pre-releases). `lee89tw14/srtla` has no `next` branch at present; create it first, otherwise the build fails at `git clone`.
 
 **SLS Override:**
 - `sls:next` - Uses next tag (only allowed in pre-releases)

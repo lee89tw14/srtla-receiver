@@ -10,12 +10,6 @@ This project is based on the following components:
 - SRTla: [lee89tw14/srtla](https://github.com/lee89tw14/srtla)
 - SRT-Live-Server: [lee89tw14/srt-live-server](https://github.com/lee89tw14/srt-live-server)
 
-### Project Support
-
-If you'd like to support this project, please visit my GoFundMe page: [gofundme](https://gofund.me/07644414)
-
-Your support helps enable further development and improvements.
-
 ## Getting Started
 
 ### Install the Receiver
@@ -41,7 +35,7 @@ To use the started container, open the management URL (e.g., `http://127.0.0.1:3
 #### Configuration Steps
 
 1. Click on "Configure Settings" on the welcome screen
-2. In the modal that opens, you'll find 2 input fields and one switch. Enter the API key shown in the console
+2. In the dialog that opens, enter the API key shown in the console
    - If you don't have the API key anymore, navigate to the directory where srtla-receiver is installed and run `cat .apikey`
 3. Click "Save" after entering the API key
 4. On the next screen, a new "Add Stream" button will appear. Click it and optionally fill in a description
@@ -156,4 +150,4 @@ If you encounter issues with the SRTla Receiver, ensure that:
 
 ## Contributing
 
-Contributions to the project are welcome! Please open an issue or pull request on GitHub.
+Contributions to the project are welcome! Please open a pull request on GitHub. The issue tracker of this fork is disabled.

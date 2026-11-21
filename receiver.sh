@@ -418,7 +418,7 @@ reset_system() {
 
 # Function to download Docker Compose file
 download_compose_file() {
-    local compose_url="https://raw.githubusercontent.com/OpenIRL/srtla-receiver/refs/heads/$(get_branch)/docker-compose.prod.yml"
+    local compose_url="https://raw.githubusercontent.com/lee89tw14/srtla-receiver/refs/heads/$(get_branch)/docker-compose.prod.yml"
     
     echo -e "${INFO}Downloading Docker Compose file ($(get_branch_display_name))...${NC}"
     
@@ -628,7 +628,7 @@ update_self() {
     echo -e "${WARNING}Backup of current script created: $backup_file${NC}"
 
     # Download latest version from GitHub
-    local repo_url="https://raw.githubusercontent.com/OpenIRL/srtla-receiver/refs/heads/$(get_branch)/receiver.sh"
+    local repo_url="https://raw.githubusercontent.com/lee89tw14/srtla-receiver/refs/heads/$(get_branch)/receiver.sh"
     echo -e "${INFO}Downloading script from $(get_branch_display_name) branch...${NC}"
 
     if curl -s -o "${SCRIPT_PATH}.new" "$repo_url"; then

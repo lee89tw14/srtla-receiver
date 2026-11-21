@@ -71,9 +71,9 @@ Release 1.2.3-beta
 
 ### Automatic Tags
 The system automatically creates the following image tags:
-- `ghcr.io/openirl/srtla-receiver:{release-tag}` (e.g. `1.2.3`)
-- `ghcr.io/openirl/srtla-receiver:latest` (only for stable releases)
-- `ghcr.io/openirl/srtla-receiver:next` (only for pre-releases)
+- `ghcr.io/lee89tw14/srtla-receiver:{release-tag}` (e.g. `1.2.3`)
+- `ghcr.io/lee89tw14/srtla-receiver:latest` (only for stable releases)
+- `ghcr.io/lee89tw14/srtla-receiver:next` (only for pre-releases)
 
 ## Version Combinations
 

@@ -1,14 +1,14 @@
 # SRTla Receiver
 
-SRTla receiver with support for multiple streams and statistics integration.
+SRTla receiver with support for multiple streams and statistics integration. Fork of [OpenIRL/srtla-receiver](https://github.com/OpenIRL/srtla-receiver), developed independently.
 
 ## Project Information
 
 This project is based on the following components:
 
-- SRT: [OpenIRL/srt](https://github.com/OpenIRL/srt)
-- SRTla: [OpenIRL/srtla](https://github.com/OpenIRL/srtla)
-- SRT-Live-Server: [OpenIRL/srt-live-server](https://github.com/OpenIRL/srt-live-server)
+- SRT: [lee89tw14/srt](https://github.com/lee89tw14/srt)
+- SRTla: [lee89tw14/srtla](https://github.com/lee89tw14/srtla)
+- SRT-Live-Server: [lee89tw14/srt-live-server](https://github.com/lee89tw14/srt-live-server)
 
 ### Project Support
 
@@ -25,7 +25,7 @@ using the shell script:
 
 1. Download the runtime management script (`receiver.sh`) to your machine:
    ```shell
-   curl -Lso receiver.sh "https://raw.githubusercontent.com/OpenIRL/srtla-receiver/refs/heads/main/receiver.sh" && chmod 700 receiver.sh
+   curl -Lso receiver.sh "https://raw.githubusercontent.com/lee89tw14/srtla-receiver/refs/heads/main/receiver.sh" && chmod 700 receiver.sh
    ```
 2. Run the installer script. It will create `./data` directory and `./.apikey` file they will be created realtive to the
    location of the `receiver.sh`

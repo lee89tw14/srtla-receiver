@@ -1,6 +1,6 @@
 services:
   sls-management-ui:
-    image: ghcr.io/openirl/sls-management-ui:latest
+    image: ghcr.io/lee89tw14/sls-management-ui:latest
     container_name: sls-management-ui
     environment:
       REACT_APP_BASE_URL: "${APP_URL}"

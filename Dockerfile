@@ -17,7 +17,7 @@ RUN apk update \
     && rm -rf /var/cache/apk/*
 
 # Clone and build SRTla
-RUN git clone -b ${SRTLA_BRANCH} https://github.com/OpenIRL/srtla.git srtla \
+RUN git clone -b ${SRTLA_BRANCH} https://github.com/lee89tw14/srtla.git srtla \
     && cd srtla \
     && git submodule update --init --recursive \
     && cmake . \

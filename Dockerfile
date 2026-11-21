@@ -3,7 +3,7 @@ ARG SRTLA_BRANCH=main
 ARG SLS_TAG=latest
 
 # Builder Stage
-FROM alpine:3.20 AS builder
+FROM alpine:3.24 AS builder
 
 # Redeclare build argument for this stage
 ARG SRTLA_BRANCH
@@ -29,14 +29,13 @@ ARG SLS_TAG
 FROM ghcr.io/lee89tw14/srt-live-server:${SLS_TAG} AS sls-stage
 
 # Final Stage
-FROM alpine:3.20
+FROM alpine:3.24
 
 ENV LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib64
 ENV SRTLA_LOG_LEVEL=info
 
-RUN apk update \
-    && apk add --no-cache openssl libstdc++ supervisor coreutils spdlog perl \
-    && rm -rf /var/cache/apk/*
+RUN apk upgrade --no-cache \
+    && apk add --no-cache libstdc++ libcrypto3 sqlite-libs supervisor spdlog perl
 
 # Create service users for security isolation
 RUN adduser -D -u 3001 -s /bin/sh sls \

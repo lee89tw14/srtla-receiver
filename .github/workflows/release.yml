@@ -6,7 +6,7 @@ on:
 
 env:
   docker_repo: 'ghcr.io'
-  image_name: 'openirl/srtla-receiver'
+  image_name: 'lee89tw14/srtla-receiver'
 
 jobs:
   release:

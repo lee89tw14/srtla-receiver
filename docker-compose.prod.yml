@@ -18,7 +18,7 @@ services:
         max-file: "3"
 
   receiver:
-    image: ghcr.io/lee89tw14/srtla-receiver:1.2.0-fork.2
+    image: ghcr.io/lee89tw14/srtla-receiver:1.2.0-fork.3
     container_name: srtla-receiver
     restart: unless-stopped
     ports:

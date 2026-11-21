@@ -422,7 +422,7 @@ download_compose_file() {
     
     echo -e "${INFO}Downloading Docker Compose file ($(get_branch_display_name))...${NC}"
     
-    if curl -s -o "docker-compose.yml" "$compose_url"; then
+    if curl -fs -o "docker-compose.yml" "$compose_url"; then
         echo -e "${SUCCESS}Docker Compose file successfully downloaded.${NC}"
         return 0
     else
@@ -631,7 +631,7 @@ update_self() {
     local repo_url="https://raw.githubusercontent.com/lee89tw14/srtla-receiver/refs/heads/$(get_branch)/receiver.sh"
     echo -e "${INFO}Downloading script from $(get_branch_display_name) branch...${NC}"
 
-    if curl -s -o "${SCRIPT_PATH}.new" "$repo_url"; then
+    if curl -fs -o "${SCRIPT_PATH}.new" "$repo_url"; then
         chmod +x "${SCRIPT_PATH}.new"
         mv "${SCRIPT_PATH}.new" "$SCRIPT_PATH"
         echo -e "${SUCCESS}Script successfully updated.${NC}"
